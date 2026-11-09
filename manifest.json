@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Yuti-1080",
+  "version": "1.0",
+  "description": "Ленивая установка: ставит 1080p на YouTube",
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
